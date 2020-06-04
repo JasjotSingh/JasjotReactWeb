@@ -1,0 +1,109 @@
+
+body{
+    font-family: 'Lora', serif;
+    margin: 0;
+}
+
+hr{
+    width:50%;
+    opacity: 40%;
+}
+
+#profile > div{
+    padding: 5% 20%;
+}
+
+.topDiv{
+    padding: 10%;
+    background-image: url('./a1b464a6-de8e-481c-a559-bb690c63726f.JPG');
+    background-size: cover;
+    background-position: 0% 25%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    width: auto;
+    height: 700px;
+
+    /* text */
+    color: rgb(241, 212, 179);
+    text-align: center;
+    
+}
+
+.topDiv span{
+    background-color: rgba(3, 3, 3, 0.6);
+    border-radius: 5%;
+    padding: 0 1%;
+}
+.topDiv div:first-child{
+    margin-top: 250px;
+}
+
+.greeting{
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 240%;
+}
+.name{
+    margin-top: -50px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 200%;
+}
+.name *{
+    margin-top: 0;
+}
+
+
+.aboutDiv{
+    background-color: rgb(252, 247, 230);
+    width: auto;
+    text-align: center;
+}
+
+.educationDiv{
+    background-color: rgb(252, 247, 230);
+    width: auto;
+    text-align: center;
+}
+
+.expDiv{
+    background-color: white;
+    width: auto;
+    text-align: center;
+}
+
+.expDiv > div{
+    text-align: left;
+    padding: 1% 0;
+}
+
+.innerExpDiv p{
+    margin: 0;
+}
+
+.innerExpDiv div{
+    display: inline-block;
+}
+
+#profile {
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1rem;
+    color: rgb(102, 100, 100);
+}
+
+#profile span{
+    font-weight: 500;
+    font-size: 110%;
+    color:  black;
+    font-style: italic;
+
+}
+
+#profile h1{
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-weight: 200;
+}
