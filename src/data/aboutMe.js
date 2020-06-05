@@ -8,9 +8,7 @@ const profile =
             Github: "https://github.com/JasjotSingh",
             Description: "Hi , My name is Jasjot Singh, i am a Software Engineer. I am aspiring to be a fullstack and distributed systems expert",
             Location: "Bay Area, CA",
-            Love : ["Coding, Gamming, Pizza"],
-            
-
+            Love : "Coding, Gamming, Pizza"
         },
         education :{
             Time :"Aug 2013 - July 2015",
@@ -63,6 +61,42 @@ const profile =
                     ]
             }
         ],
-        skill:[]
+        skill:[
+                {
+                    Title: "Programmig Languages",
+                    List:["Java", "JavaScript", "Python", "HTML", "CSS"]
+                },
+                {
+                    Title: "Ide's",
+                    List:["Android Studio", "Eclipse", "SpringToolSet4", "IntelliJ", "VSCode"]
+                },
+                {
+                    Title:"Tools and FrameWorks",
+                    List:["Node.js", "Express.js", "React", "Embedded js", "JQuery", "Spring MVC", "Spring Boot", "Jerey ( Jax-rs )", "Maven", "Spring Netflix Eureka service registry"]
+                },
+                {
+                    Title:"Database",
+                    List:["Data Structures", "MySQL", "Mongo DB", "SQLite", "Hibernate (DB Technology)"]
+                },
+                {
+                    Title:"Version Controll",
+                    List:["Perforce", "Github"]
+                }
+        ],
+        projects:[
+            {
+                ProjectNAme: "Per-Tenant Open Stack Implementation", 
+                Description :"Developed an interface as a proxy between cloud service users and service providers that can apply for different kind of cloud service from different service provider according to users’ requests. Used the Open Stack Swift and Cinder APIs to implement the interface of object storage and volume storage to allow users store/retrieve their files and volumes from any provider at the same time. Led the design of the modules.",
+                LanguageUsed: "Python"
+
+            },
+            {
+                ProjectNAme: "EDUKid", 
+                Description :"(Android application) to be used primarily on Tablet or mobile, supports a child to learn in an interactive manner with the environment, allows custom module creation, so that the parents can play an active role as to what the child learns.",
+                LanguageUsed: "Java"
+            }
+
+        ]
+
     }
 export default profile;

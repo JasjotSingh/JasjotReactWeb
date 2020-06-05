@@ -6,13 +6,10 @@ body{
 
 hr{
     width:50%;
-    opacity: 40%;
 }
 
-#profile > div{
-    padding: 5% 20%;
-}
 
+/* ============== Top Div STRT================= */
 .topDiv{
     padding: 10%;
     background-image: url('./a1b464a6-de8e-481c-a559-bb690c63726f.JPG');
@@ -22,7 +19,7 @@ hr{
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     width: auto;
-    height: 700px;
+    height: 800px;
 
     /* text */
     color: rgb(241, 212, 179);
@@ -39,34 +36,52 @@ hr{
     margin-top: 250px;
 }
 
-.greeting{
+.greeting > h4{
     font-weight: lighter;
     font-style: italic;
-    font-size: 240%;
+    font-size: 250%;
 }
-.name{
-    margin-top: -50px;
+.name > h1{
     font-weight: bold;
     font-style: italic;
-    font-size: 200%;
+    font-size: 400%;
 }
 .name *{
-    margin-top: 0;
+    margin: 0;
 }
 
+/* ============== Top Div END================= */
 
+
+
+/*=============== About Div STRT===============*/
 .aboutDiv{
     background-color: rgb(252, 247, 230);
     width: auto;
     text-align: center;
 }
+/*=============== About Div END===============*/
 
+
+
+
+/*=============== Education Div STRT===============*/
 .educationDiv{
+    background-color: white;
+    width: auto;
+    text-align: center;
+}
+/*=============== About Div END===============*/
+
+/*=============== Skill Div STRT===============*/
+.skillDiv{
     background-color: rgb(252, 247, 230);
     width: auto;
     text-align: center;
 }
+/*=============== Skill Div END===============*/
 
+/* =============Exp divs STRT================ */
 .expDiv{
     background-color: white;
     width: auto;
@@ -75,23 +90,41 @@ hr{
 
 .expDiv > div{
     text-align: left;
-    padding: 1% 0;
+    padding: 3% 3%;
+    border: 1px none;
+    margin-top: 5%;
+    border-radius: 2%;
+    background-color: rgb(252, 247, 230);
+    position: relative;
+    left: 0;
+    top:0;
+    box-shadow: 0 0 0 #888888;
+    transition: left ease-in-out .6s, top ease-in-out .6s, box-shadow ease-in-out .6s;
 }
+
+/* .expDiv > div:hover{ */
+    /* //one way independent of other things */
+    /* transform: translate(20px,-20px);
+    transition: transform ease-in .4s; */
+    /* top:-20px;
+    left:-20px;
+} */
 
 .innerExpDiv p{
     margin: 0;
 }
 
-.innerExpDiv div{
-    display: inline-block;
-}
+/* =============Exp divs END================ */
 
+
+
+/* ================Main Profile STRT===================== */
 #profile {
     font-family: 'Lora', serif;
     font-weight: normal;
     font-style: italic;
     font-size: 1rem;
-    color: rgb(102, 100, 100);
+    color: rgb(99, 97, 97);
 }
 
 #profile span{
@@ -107,3 +140,8 @@ hr{
     font-family: 'Playfair Display', serif;
     font-weight: 200;
 }
+
+#profile > div{
+    padding: 5% 15%;
+}
+/* ================Main Profile END===================== */

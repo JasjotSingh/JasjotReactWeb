@@ -1,8 +1,9 @@
 import React from "react";
-import Intro from "./Intro";
-import About, {createEducationDiv, createInfoDiv} from "./About";
-import Exp from "./Exp"
+import Intro from "./Intro/Intro";
+import About, {createEducationDiv, createInfoDiv, createSkillDiv} from "./ObjComponents/ObjDiv";
+import Exp from "./ObjArrayComponents/ObjArray"
 import profile from "../data/aboutMe";
+
 
 
 
@@ -18,7 +19,8 @@ function App(){
                     func = {createInfoDiv} 
                 />
                 <Exp 
-                    className="expDiv"
+                    
+                    className = "expDiv"
                     title = "Work Experiance"
                     aboutme = {profile.exp}
                 />
@@ -29,6 +31,9 @@ function App(){
                     aboutme ={profile.education} 
                     func = {createEducationDiv}
                 />
+
+                
+
             </div>
         </div>
     )

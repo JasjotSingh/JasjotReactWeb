@@ -1,6 +1,15 @@
 import React from "react";
 import InfoDiv from "./InfoDiv"
 
+function createInlineLiTag(props){
+    
+    return(
+        <li>
+            {props}
+        </li>
+    );
+}
+
 function createInfoDiv(props){
     return(
         <div>
@@ -8,7 +17,7 @@ function createInfoDiv(props){
             <p><span>LinkedIn: </span><a href = {props.Linkedin}>{props.Linkedin}</a>  <span>GitHub: </span><a href = {props.Linkedin}>{props.Github}</a></p>
             <p>{props.Location}</p>
             <p><span>About me: </span> {props.Description}</p>
-            <p><span>Things i love: </span> {props.Love}</p>
+            <p><span>Things i love: </span>{props.Love}</p>
         </div>
     );
 }
