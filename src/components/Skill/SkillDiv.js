@@ -1,6 +1,6 @@
 import React from "react";
 import ListItem from "../ListItem";
-
+import classnames from "classnames";
 
 function liItems(item){
     return(
@@ -20,15 +20,17 @@ function SkillCard(param){
   }
 
   let style ={
-    backgroundColor : mouseOver ? "cadetblue" : "aliceblue",
-    color : mouseOver ? "white": "black",
+    backgroundColor : mouseOver ? "gray" : "white",
+    color : "black",
     marginBottom: "0",
     padding:" 5% 5%",
   }
 
+  const cardClass = classnames("card");
+  const cardTextClass = classnames("card-body");
 
   return(
-    <div className="card">
+    <div className={cardClass}>
      
         <h5 
         style ={style} 
@@ -38,7 +40,7 @@ function SkillCard(param){
           {param.title}
         </h5>
       
-        <div className="card-body">
+        <div className={cardTextClass}>
           <ul className="card-text" >
               {param.list.map(liItems)}
           </ul>

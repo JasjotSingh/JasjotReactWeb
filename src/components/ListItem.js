@@ -3,7 +3,7 @@ import React from "react";
 function ListItem(item) {
 
     return(
-        <li>
+        <li className = "listItm">
             {item.item}
         </li>
     );

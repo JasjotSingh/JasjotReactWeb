@@ -6,10 +6,10 @@ body{
 
 hr{
     width:50%;
-    border: solid gray;
+    /* border: solid gray;
     border-top: none;
     border-left: none;
-    border-right: none;
+    border-right: none; */
 }
 
 /* ============== Top Div STRT================= */
@@ -22,7 +22,7 @@ hr{
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     width: auto;
-    height: 800px;
+    height: 900px;
 
     /* text */
     color: rgb(241, 212, 179);
@@ -59,7 +59,8 @@ hr{
 
 /*=============== About Div STRT===============*/
 .aboutDiv{
-    background-color: white;
+    background-color: whitesmoke;
+    border-radius: 10% 0;
     width: auto;
     text-align: center;
 }
@@ -77,7 +78,7 @@ hr{
 
 /*=============== Skill Div STRT===============*/
 .skillDiv{
-    background-color: white;
+    background-color: whitesmoke;
     width: auto;
     text-align: center;
 }
@@ -89,7 +90,19 @@ hr{
 .skillDiv .card{
     text-align: left;
     margin-bottom: 20px;
-    box-shadow: 4px 5px 6px #888888;
+    border: 0;
+    box-shadow: 4px 8px 9px #888888;
+}
+
+.skillDiv .listItm{
+    position: relative;
+    left: 0;
+    top:0;
+    transition: left ease-in-out .2s, top ease-in-out .2s;
+}
+.skillDiv .listItm:hover{
+    left: 20px;
+    top: -1.5px;
 }
 /*=============== Skill Div END===============*/
 
@@ -180,7 +193,7 @@ hr{
 }
 
 #profile h1{
-    color: cadetblue;
+    color: black;
     font-family: 'Playfair Display', serif;
     font-weight: 300;
 }
