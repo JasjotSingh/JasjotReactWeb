@@ -1,14 +1,5 @@
 import React from "react";
-import InfoDiv from "./InfoDiv"
-
-function createInlineLiTag(props){
-    
-    return(
-        <li>
-            {props}
-        </li>
-    );
-}
+import InfoDiv from "../Obj"
 
 function createInfoDiv(props){
     return(

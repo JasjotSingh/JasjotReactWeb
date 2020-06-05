@@ -1,12 +1,14 @@
 import React from "react";
 import classnames from "classnames";
+import ListItem from "../ListItem";
 
-function createRespDiv (params) {
+function createRespDiv (item) {
     return(
-            <li>
-                <p>{params}</p>
-            </li>
-        );
+        <ListItem 
+          key = {item.id}
+          item = {item.item}
+        />
+    );
 }
 
 function ExpDiv(props){
@@ -25,7 +27,6 @@ function ExpDiv(props){
         left: mouseover && "-20px",
         boxShadow: mouseover && "5px 10px 8px #888888"
     }
-
     return(
         <div className={localClass}  style= {hoverStyle} onMouseEnter ={mouseEnter} onMouseLeave={mouseLeave}>
             <div className= "row">
