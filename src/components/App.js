@@ -1,7 +1,7 @@
 import React from "react";
 import Intro from "./Intro/Intro";
 import Obj, {createEducationDiv, createInfoDiv} from "./Info/InfoDiv";
-import ObjArrayToRegDiv, {ObjArrayToCardCol} from "./ObjArray"
+import ObjArrayToRegDiv, {ObjArrayToCardCol,ObjArrayToProjDiv} from "./ObjArray"
 import profile from "../data/aboutMe";
 
 
@@ -32,14 +32,19 @@ function App(){
                     func = {createEducationDiv}
                 />
 
-                {/* <ObjArrayToCardCol 
+                <ObjArrayToCardCol 
                     
                     className = "skillDiv"
                     title = "Technical Skills"
                     aboutme = {profile.skill}
-                />      
-                 */}
+                />
 
+                <ObjArrayToProjDiv 
+                    
+                    className = "projDiv"
+                    title = "Projects"
+                    aboutme = {profile.projects}
+                />
             </div>
         </div>
     )

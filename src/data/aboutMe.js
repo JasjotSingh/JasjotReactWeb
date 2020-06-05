@@ -121,37 +121,85 @@ const profile =
         ],
         skill:[
                 {
+                    id:1,
                     Title: "Programmig Languages",
-                    List:["Java", "JavaScript", "Python", "HTML", "CSS"]
+                    List:[
+                        {id:1, item:"Java"}, 
+                        {id:2,item:"JavaScript"}, 
+                        {id:3,item:"Python"}, 
+                        {id:4, item:"HTML"}, 
+                        {id:5,item:"CSS"}
+                    ]
                 },
                 {
-                    Title: "Ide's",
-                    List:["Android Studio", "Eclipse", "SpringToolSet4", "IntelliJ", "VSCode"]
+                    id:2,
+                    Title: "IDE's",
+                    List:[
+                        {id:1,item:"Android Studio"}, 
+                        {id:2,item:"Eclipse"}, 
+                        {id:3,item:"SpringToolSet4"}, 
+                        {id:4, item:"IntelliJ"}, 
+                        {id:5,item:"VSCode"}
+                    ]
                 },
                 {
+                    id:3,
                     Title:"Tools and FrameWorks",
-                    List:["Node.js", "Express.js", "React", "Embedded js", "JQuery", "Spring MVC", "Spring Boot", "Jerey ( Jax-rs )", "Maven", "Spring Netflix Eureka service registry"]
+                    List:[
+                        {id:1,item:"Node.js"}, 
+                        {id:2,item:"Express.js"}, 
+                        {id:3,item:"React"}, 
+                        {id:4,item: "Embedded js"}, 
+                        {id:5,item:"JQuery"}, 
+                        {id:6,item:"Spring MVC"}, 
+                        {id:7, item:"Spring Boot"}, 
+                        {id:8, item:"Jerey ( Jax-rs )"}, 
+                        {id:9, item:"Maven"}, 
+                        {id:10,item:"Spring Netflix Eureka service registry"}
+                    ]
                 },
                 {
+                    id:4,
                     Title:"Database",
-                    List:["Data Structures", "MySQL", "Mongo DB", "SQLite", "Hibernate (DB Technology)"]
+                    List:[
+                        {id:1,item:"Data Structures"}, 
+                        {id:2,item:"MySQL"}, 
+                        {id:3,item:"Mongo DB"}, 
+                        {id:4, item:"SQLite"}, 
+                        {id:5,item:"Hibernate (DB Technology)"}
+                    ]
                 },
                 {
+                    id:5,
                     Title:"Version Controll",
-                    List:["Perforce", "Github"]
+                    List:[
+                        {id:1,item:"Perforce"}, 
+                        {id:2,item:"Github"}
+                    ]
                 }
         ],
         projects:[
             {
-                ProjectNAme: "Per-Tenant Open Stack Implementation", 
+                id:1,
+                ProjectName: "Per-Tenant Open Stack Implementation", 
                 Description :"Developed an interface as a proxy between cloud service users and service providers that can apply for different kind of cloud service from different service provider according to users’ requests. Used the Open Stack Swift and Cinder APIs to implement the interface of object storage and volume storage to allow users store/retrieve their files and volumes from any provider at the same time. Led the design of the modules.",
-                LanguageUsed: "Python"
+                LanguageUsed: "Python",
+                link:""
 
             },
             {
-                ProjectNAme: "EDUKid", 
+                id:2,
+                ProjectName: "EDUKid", 
                 Description :"(Android application) to be used primarily on Tablet or mobile, supports a child to learn in an interactive manner with the environment, allows custom module creation, so that the parents can play an active role as to what the child learns.",
-                LanguageUsed: "Java"
+                LanguageUsed: "Java",
+                link:""
+            },
+            {
+                id:3,
+                ProjectName: "Secrets Web Project", 
+                Description : "Built a web app using Express js, Node js, ejs (for rendering HTML) and Mongoose for ODM with mongo db. Clients can sign up/ sign in on web site and start sharing their secrets online anomalously. Authentication is done using passport.js, which uses hashing and salting techniques. Also the secrets that are shared are kept in separate collections in mongodb, so that secrets cannot be traced back to the user. Hosted on cloud Heroku Cloud Application Platform.",
+                LanguageUsed: "JavaSCript",
+                link:""
             }
 
         ]

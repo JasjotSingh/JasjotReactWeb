@@ -6,8 +6,11 @@ body{
 
 hr{
     width:50%;
+    border: solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
-
 
 /* ============== Top Div STRT================= */
 .topDiv{
@@ -56,13 +59,11 @@ hr{
 
 /*=============== About Div STRT===============*/
 .aboutDiv{
-    background-color: rgb(252, 247, 230);
+    background-color: white;
     width: auto;
     text-align: center;
 }
 /*=============== About Div END===============*/
-
-
 
 
 /*=============== Education Div STRT===============*/
@@ -73,11 +74,22 @@ hr{
 }
 /*=============== About Div END===============*/
 
+
 /*=============== Skill Div STRT===============*/
 .skillDiv{
-    background-color: rgb(252, 247, 230);
+    background-color: white;
     width: auto;
     text-align: center;
+}
+
+.skillDiv .card-columns{
+    padding: 5% 5%;
+}
+
+.skillDiv .card{
+    text-align: left;
+    margin-bottom: 20px;
+    box-shadow: 4px 5px 6px #888888;
 }
 /*=============== Skill Div END===============*/
 
@@ -92,14 +104,14 @@ hr{
     text-align: left;
     padding: 3% 3%;
     border: 1px none;
-    margin-top: 5%;
+    margin-top: 6%;
     border-radius: 2%;
-    background-color: rgb(252, 247, 230);
+    background-color: whitesmoke;
     position: relative;
     left: 0;
     top:0;
     box-shadow: 0 0 0 #888888;
-    transition: left ease-in-out .6s, top ease-in-out .6s, box-shadow ease-in-out .6s;
+    transition: left ease-in-out .6s, top ease-in-out .6s, box-shadow ease-in-out .4s;
 }
 
 /* .expDiv > div:hover{ */
@@ -111,10 +123,42 @@ hr{
 } */
 
 .innerExpDiv p{
-    margin: 0;
+    margin: 1px;
 }
 
 /* =============Exp divs END================ */
+
+/* =============Proj divs STRT================ */
+.projDiv{
+    background-color: white;
+    width: auto;
+    text-align: center;
+}
+
+.innerProjDiv{
+    text-align: left;
+    padding: 3% 3%;
+    border: 1px none;
+    margin: 3% 3%;
+    border-radius: 2%;
+    background-color: whitesmoke;
+    position: relative;
+    left: 0;
+    top:0;
+    box-shadow: 0 0 0 #888888;
+    transition: left ease-in-out .6s, top ease-in-out .6s, box-shadow ease-in-out .4s;
+}
+
+/* .expDiv > div:hover{ */
+    /* //one way independent of other things */
+    /* transform: translate(20px,-20px);
+    transition: transform ease-in .4s; */
+    /* top:-20px;
+    left:-20px;
+} */
+
+
+/* =============Proj divs END================ */
 
 
 
@@ -136,12 +180,12 @@ hr{
 }
 
 #profile h1{
-    color: black;
+    color: cadetblue;
     font-family: 'Playfair Display', serif;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 #profile > div{
-    padding: 5% 15%;
+    padding: 5% 10%;
 }
 /* ================Main Profile END===================== */

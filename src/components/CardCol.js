@@ -1,10 +1,13 @@
 import React from "react";
-import SkillCardDiv from "./Card";
+import SkillCardDiv from "./Skill/SkillDiv";
 
 function createCard(params) {
     return(
         <SkillCardDiv
-            params = {params}
+            key= {params.id}
+            id={params.id}
+            title = {params.Title}
+            list = {params.List}
         />
     );
 }
@@ -12,7 +15,7 @@ function createCard(params) {
 function CardCol(params) {
     return(
         <div className="card-columns">
-            {params.map(createCard)}
+            {params.skills.map(createCard)}
         </div>
     );
 }

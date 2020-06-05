@@ -1,6 +1,6 @@
 import React from "react";
 import Heading from "./Heading";
-import RegDiv from "./RegDiv";
+import RegDiv,{Proj} from "./RegDiv";
 import CardColDiv from "./CardCol";
 
 
@@ -11,7 +11,18 @@ function ObjArrayToRegDiv(params) {
         <div className={params.className}>
             <Heading title = {params.title}/>
             <hr></hr>
-            <RegDiv workexp = {params.aboutme}/>
+            <RegDiv aboutme = {params.aboutme}/>
+        </div>
+    );
+}
+
+function ObjArrayToProjDiv(params) {
+    
+    return (
+        <div className={params.className}>
+            <Heading title = {params.title}/>
+            <hr></hr>
+            <Proj aboutme = {params.aboutme}/>
         </div>
     );
 }
@@ -22,10 +33,10 @@ function ObjArrayToCardCol(params) {
         <div className={params.className}>
             <Heading title = {params.title}/>
             <hr></hr>
-            <CardColDiv skills = {params}/>
+            <CardColDiv skills = {params.aboutme}/>
         </div>
     );
 }
 
 export default ObjArrayToRegDiv;
-export {ObjArrayToCardCol};
+export {ObjArrayToCardCol, ObjArrayToProjDiv};

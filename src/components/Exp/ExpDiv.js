@@ -27,14 +27,16 @@ function ExpDiv(props){
         left: mouseover && "-20px",
         boxShadow: mouseover && "5px 10px 8px #888888"
     }
+    const classTitle = classnames("col-lg-4", "col-sm-12");
+    const classDescp = classnames("col-lg-8", "col-sm-12");
     return(
         <div className={localClass}  style= {hoverStyle} onMouseEnter ={mouseEnter} onMouseLeave={mouseLeave}>
             <div className= "row">
-                <div className = "col-4">
+                <div className = {classTitle}>
                     <p><span>{props.name}</span> {props.location} </p>
                     <p><span>{props.position}</span></p>
-            </div>
-            <div className = "col-8">
+                </div>
+                <div className ={classDescp}>
                     <ul>
                         {props.responsibility.map(createRespDiv)} 
                     </ul>
