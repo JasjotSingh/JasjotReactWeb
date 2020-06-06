@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Lora', serif;
@@ -25,13 +28,13 @@ hr{
     height: 900px;
 
     /* text */
-    color: rgb(241, 212, 179);
+    color: white;
     text-align: center;
     
 }
 
 .topDiv span{
-    background-color: rgba(3, 3, 3, 0.6);
+    background-color: rgba(3, 3, 3, 0.45);
     border-radius: 5%;
     padding: 0 1%;
 }
@@ -59,11 +62,37 @@ hr{
 
 /*=============== About Div STRT===============*/
 .aboutDiv{
+    position: relative;
     background-color: whitesmoke;
-    border-radius: 10% 0;
     width: auto;
     text-align: center;
+    
 }
+
+/* .aboutDiv:after{
+    position:absolute;
+    content: " ";
+    display:block;
+    left:-5%;
+    bottom:-35px;
+    transform:rotate(-2.5deg);
+    width:110%;
+    height: 80px;
+    background: khaki;
+   
+}
+.aboutDiv:before{
+    position:absolute;
+    content: " ";
+    display:block;
+    left:-5%;
+    top: -35px;
+    transform:rotate(2.5deg);
+    width:110%;
+    height: 80px;
+    background: lawngreen;
+   
+} */
 /*=============== About Div END===============*/
 
 
@@ -78,6 +107,7 @@ hr{
 
 /*=============== Skill Div STRT===============*/
 .skillDiv{
+    position: relative;
     background-color: whitesmoke;
     width: auto;
     text-align: center;
@@ -90,9 +120,9 @@ hr{
 .skillDiv .card{
     text-align: left;
     margin-bottom: 20px;
-    border: 0;
     box-shadow: 4px 8px 9px #888888;
 }
+
 
 .skillDiv .listItm{
     position: relative;
@@ -111,6 +141,7 @@ hr{
     background-color: white;
     width: auto;
     text-align: center;
+    z-index: 1;
 }
 
 .innerExpDiv{
@@ -162,14 +193,6 @@ hr{
     transition: left ease-in-out .6s, top ease-in-out .6s, box-shadow ease-in-out .4s;
 }
 
-/* .expDiv > div:hover{ */
-    /* //one way independent of other things */
-    /* transform: translate(20px,-20px);
-    transition: transform ease-in .4s; */
-    /* top:-20px;
-    left:-20px;
-} */
-
 
 /* =============Proj divs END================ */
 
@@ -199,6 +222,111 @@ hr{
 }
 
 #profile > div{
-    padding: 5% 10%;
+    padding: 8% 10%;
+}
+
+#profile #navbar{
+    padding: 0;
+
 }
 /* ================Main Profile END===================== */
+
+/* ================Icon STRT===================== */
+.Icon{
+    margin: 0% 1%;
+    font-size: 3rem;
+}
+/* ================Icon END===================== */
+
+/* ================NAv STRT===================== */
+/* side menu */
+.navDiv{
+    border-radius: 3%;
+    position: fixed;
+    z-index: 1;
+    top: 30%;
+    left: 89%;
+    width: 10%;
+    overflow: hidden;
+    background-color: rgba(3, 3, 3, 0.45);
+    text-align: center;
+}
+.navDiv a{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    
+    text-decoration: none;
+    
+}
+
+/* top nav bar */
+.navBarDiv{
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+}
+
+.navBarDiv a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    
+    text-decoration: none;
+    
+}
+
+#navbar {
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: rgba(3, 3, 3, 0.45);
+}
+  
+#navbar a{
+    font-size: 1.3rem;
+    padding: 15px 8px;
+}
+
+#navbar a:hover {
+    background-color: rgb(0, 132, 255);
+}
+
+.hideIcon{
+    display: none;
+}
+
+.showIcon{
+    background-color: transparent;
+    color: white;
+    border: 0;
+    font-size: 1.3rem;
+    margin-right: 5%;
+    padding: 15px 8px;
+}
+
+.hideLinks{
+    position: fixed;
+    z-index: 1;
+    text-align: right;
+    width: 100%;
+}
+
+.hideLinks a{
+    display: none; 
+}
+
+.showLinks{
+    text-align: right;
+}
+
+.showLinks a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    
+    text-decoration: none;
+    
+}
+/* ================NAv END===================== */

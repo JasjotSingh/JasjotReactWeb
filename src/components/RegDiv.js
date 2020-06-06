@@ -40,10 +40,10 @@ function RegDiv(params) {
 
 function Proj(params) {
     return(
-        <div className="container">
-            <dia className="row">
+        <div className="container" style={{marginTop : "5%"}}>
+            <div className="row">
                 {params.aboutme.map(createProjDiv)}
-            </dia>
+            </div>
         </div>
     );
 }

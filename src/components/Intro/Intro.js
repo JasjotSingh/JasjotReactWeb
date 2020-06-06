@@ -2,7 +2,7 @@ import React from "react";
 
 function Intro(){
     return(
-        <div className = "topDiv">
+        <div id = "Home" className = "topDiv">
             <div className="greeting">
                 <h4>
                     <p>

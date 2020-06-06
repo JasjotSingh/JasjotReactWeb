@@ -14,7 +14,7 @@ function createCard(params) {
 
 function CardCol(params) {
     return(
-        <div className="card-columns">
+        <div className="card-columns" style={{marginTop : "2%"}}>
             {params.skills.map(createCard)}
         </div>
     );

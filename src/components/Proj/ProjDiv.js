@@ -22,7 +22,7 @@ function ProjDiv(props){
     return(
         
         <div className = {classes} style={hoverStyle} onMouseEnter ={mouseEnter} onMouseLeave={mouseLeave}>
-            <p><h4><span>{props.name}</span></h4> {props.language} </p>
+            <span><h4><span>{props.name}</span></h4> {props.language} </span>
             <p>{props.desp}</p>
         </div>
            

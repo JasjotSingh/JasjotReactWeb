@@ -8,7 +8,7 @@ import CardColDiv from "./CardCol";
 function ObjArrayToRegDiv(params) {
     
     return (
-        <div className={params.className}>
+        <div id={params.id} className={params.className}>
             <Heading title = {params.title}/>
             <hr></hr>
             <RegDiv aboutme = {params.aboutme}/>
@@ -19,7 +19,7 @@ function ObjArrayToRegDiv(params) {
 function ObjArrayToProjDiv(params) {
     
     return (
-        <div className={params.className}>
+        <div id={params.id} className={params.className} >
             <Heading title = {params.title}/>
             <hr></hr>
             <Proj aboutme = {params.aboutme}/>
@@ -30,7 +30,7 @@ function ObjArrayToProjDiv(params) {
 function ObjArrayToCardCol(params) {
     
     return (
-        <div className={params.className}>
+        <div id={params.id} className={params.className}>
             <Heading title = {params.title}/>
             <hr></hr>
             <CardColDiv skills = {params.aboutme}/>

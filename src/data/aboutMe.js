@@ -4,13 +4,17 @@ const profile =
     {
         info :{
             Name: "Jasjot Singh",
+            Quote:"The only disability in life is bad attitude.",
+            Quoteby:"-Scott Hamilton",
             Linkedin :"https://www.linkedin.com/in/jasjot-singh-08238466/",
             Github: "https://github.com/JasjotSingh",
-            Description: "Hi , My name is Jasjot Singh, i am a Software Engineer. I am aspiring to be a fullstack and distributed systems expert",
+            Description: "Hi , My name is Jasjot Singh, i am a Software Engineer. I am aspiring to be a fullstack and distributed systems expert.",
             Location: "Bay Area, CA",
             Love : "Coding, Gamming, Pizza"
         },
         education :{
+            Quote:"Education is not the learning of facts, but traning of the mind to think",
+            Quoteby:"-Albert Einstein",
             Time :"Aug 2013 - July 2015",
             Degree : "Masters of Science Computer Science",
             School : "Boston University",
@@ -198,11 +202,35 @@ const profile =
                 id:3,
                 ProjectName: "Secrets Web Project", 
                 Description : "Built a web app using Express js, Node js, ejs (for rendering HTML) and Mongoose for ODM with mongo db. Clients can sign up/ sign in on web site and start sharing their secrets online anomalously. Authentication is done using passport.js, which uses hashing and salting techniques. Also the secrets that are shared are kept in separate collections in mongodb, so that secrets cannot be traced back to the user. Hosted on cloud Heroku Cloud Application Platform.",
-                LanguageUsed: "JavaSCript",
+                LanguageUsed: "JavaScript",
+                link:""
+            },
+            {
+                id:4,
+                ProjectName: "Speech Recognition", 
+                Description : "It’s a basic speech recognition program that recognizes different words in the speech, implemented on the concept of k means clustering. TO DO: work on the other version that uses Hidden Markov Models (HMMs) in order to achieve better functionality.",
+                LanguageUsed: "Python",
+                link:""
+            },
+            {
+                id:5,
+                ProjectName: "Optimal Tracker",
+                Description : "Implements the A*search algorithm in order to find the shortest path between two points, Uses the basic concepts of Artificial intelligence",
+                LanguageUsed: "Python",
+                link:""
+            },
+            {
+                id:6,
+                ProjectName: "Multi-threaded Server",
+                Description : "Built a multi-threaded server that sent text messages, via sockets, to client. Server thread listened on a specific port each incoming client request and forwarded it to worker thread. A pool of worker threads was created with one worker per client. Dispatcher thread sent the data to the respective client based on priority. A circular buffer was used to solve the producer-consumer problem.",
+                LanguageUsed: "Java",
                 link:""
             }
 
         ]
 
     }
+
+    // Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    // Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 export default profile;
