@@ -1,5 +1,5 @@
 import React from "react";
-import ListItem from "../ListItem";
+import ListItem from "../ListItm/ListItem";
 import classnames from "classnames";
 
 function liItems(item){

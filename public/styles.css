@@ -1,3 +1,4 @@
+/* ============== Html Elements STRT================= */
 html{
     scroll-behavior: smooth;
 }
@@ -9,16 +10,13 @@ body{
 
 hr{
     width:50%;
-    /* border: solid gray;
-    border-top: none;
-    border-left: none;
-    border-right: none; */
 }
+/* ============== Html Elements END================= */
 
 /* ============== Top Div STRT================= */
 .topDiv{
     padding: 10%;
-    background-image: url('./a1b464a6-de8e-481c-a559-bb690c63726f.JPG');
+    background-image: url('./img/a1b464a6-de8e-481c-a559-bb690c63726f.JPG');
     background-size: cover;
     background-position: 0% 25%;
 
@@ -172,6 +170,7 @@ hr{
 
 /* =============Exp divs END================ */
 
+
 /* =============Proj divs STRT================ */
 .projDiv{
     background-color: white;
@@ -192,7 +191,6 @@ hr{
     box-shadow: 0 0 0 #888888;
     transition: left ease-in-out .6s, top ease-in-out .6s, box-shadow ease-in-out .4s;
 }
-
 
 /* =============Proj divs END================ */
 
@@ -238,7 +236,7 @@ hr{
 }
 /* ================Icon END===================== */
 
-/* ================NAv STRT===================== */
+/* ================Nav STRT===================== */
 /* side menu */
 .navDiv{
     border-radius: 3%;

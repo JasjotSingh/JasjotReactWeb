@@ -1,9 +1,17 @@
 import React from "react";
+
 import Intro from "./Intro/Intro";
-import Obj, {createEducationDiv, createInfoDiv} from "./Info/InfoDiv";
-import ObjArrayToRegDiv, {ObjArrayToCardCol,ObjArrayToProjDiv} from "./ObjArray"
-import profile from "../data/aboutMe";
 import Nav from "./Nav/Nav";
+
+//data import:
+import profile from "../data/aboutMe";
+
+//two ways of making a structure: 
+//1. about and Education divs.
+import {createEducationDiv, createInfoDiv} from "./Info/InfoDiv";
+import Obj from "./Obj";
+//2.Exp and Proj divs.
+import {ObjArrayToExpRegDiv,ObjArrayToCardCol,ObjArrayToProjDiv} from "./ObjArray"
 
 
 
@@ -22,7 +30,7 @@ function App(){
                     func = {createInfoDiv} 
                 />
 
-                <ObjArrayToRegDiv 
+                <ObjArrayToExpRegDiv 
                     
                     className = "expDiv"
                     id= "Experiance" 

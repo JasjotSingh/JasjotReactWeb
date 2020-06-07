@@ -1,6 +1,6 @@
 import React from "react";
 import classnames from "classnames";
-import ListItem from "../ListItem";
+import ListItem from "../ListItm/ListItem";
 
 function createRespDiv (item) {
     return(

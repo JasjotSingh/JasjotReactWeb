@@ -1,17 +1,18 @@
 import React from "react";
-import Heading from "./Heading";
-import RegDiv,{Proj} from "./RegDiv";
-import CardColDiv from "./CardCol";
+
+import Heading from "./Heading/Heading";
+import {Exp, Proj, CardCol} from "./RegDiv";
 
 
 
-function ObjArrayToRegDiv(params) {
+
+function ObjArrayToExpRegDiv(params) {
     
     return (
         <div id={params.id} className={params.className}>
             <Heading title = {params.title}/>
             <hr></hr>
-            <RegDiv aboutme = {params.aboutme}/>
+            <Exp aboutme = {params.aboutme}/>
         </div>
     );
 }
@@ -33,10 +34,10 @@ function ObjArrayToCardCol(params) {
         <div id={params.id} className={params.className}>
             <Heading title = {params.title}/>
             <hr></hr>
-            <CardColDiv skills = {params.aboutme}/>
+            <CardCol list = {params.aboutme}/>
         </div>
     );
 }
 
-export default ObjArrayToRegDiv;
-export {ObjArrayToCardCol, ObjArrayToProjDiv};
+
+export {ObjArrayToCardCol, ObjArrayToProjDiv, ObjArrayToExpRegDiv};

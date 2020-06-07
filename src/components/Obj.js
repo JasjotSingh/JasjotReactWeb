@@ -1,14 +1,15 @@
 import React from "react";
-import Heading from "./Heading"
+import Heading from "./Heading/Heading";
 
-function InfoDiv(props){
-    return(
-        <div>
+
+function Obj(props){
+    return (
+        <div id={props.id} className = {props.className} >
             <Heading title = {props.title} />
             <hr></hr>
             {props.func(props.aboutme)}
-        </div> 
+        </div>
     );
 }
 
-export default InfoDiv;
+export default Obj;

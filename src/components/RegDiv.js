@@ -1,7 +1,19 @@
 import React from "react";
 import ExpDiv from "./Exp/ExpDiv";
-import ProjDiv from "./Proj/ProjDiv"
+import ProjDiv from "./Proj/ProjDiv";
+import SkillCardDiv from "./Skill/SkillDiv";
 
+
+function createSkillCard(params) {
+    return(
+        <SkillCardDiv
+            key= {params.id}
+            id={params.id}
+            title = {params.Title}
+            list = {params.List}
+        />
+    );
+}
 
 function createExpDiv(params) {
     return (
@@ -30,7 +42,7 @@ function createProjDiv(params) {
     );
 }
 
-function RegDiv(params) {
+function Exp(params) {
     return(
         <div>
             {params.aboutme.map(createExpDiv)}
@@ -48,5 +60,12 @@ function Proj(params) {
     );
 }
 
-export default RegDiv;
-export {Proj};
+function CardCol(params) {
+    return(
+        <div className="card-columns" style={{marginTop : "2%"}}>
+            {params.list.map(createSkillCard)}
+        </div>
+    );
+}
+
+export {Exp, Proj,CardCol};

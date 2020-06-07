@@ -1,10 +1,12 @@
 import React from "react";
-import InfoDiv from "../Obj";
 import classnames from "classnames";
 
 function createInfoDiv(props){
+    //classes for LinkedIn and Github icons
     const linkClass= classnames("fab", "fa-linkedin", "Icon")
     const ghClass= classnames("fab", "fa-github", "Icon")
+
+    
     const style ={
         marginTop : "5%",
     }
@@ -29,9 +31,11 @@ function createInfoDiv(props){
 }
 
 function createEducationDiv(props){
+
     const style ={
         marginTop : "5%",
     }
+
     return(
         <div style={style}>
             <h4><q style={{color: "darkslategray"}}>{props.Quote}</q></h4>
@@ -43,13 +47,4 @@ function createEducationDiv(props){
     );
 }
 
-function About(props){
-    return (
-        <div id={props.id} className = {props.className}>
-            <InfoDiv aboutme = {props.aboutme} title = {props.title} func={props.func}/>
-        </div>
-    );
-}
-
-export default About;
 export {createInfoDiv, createEducationDiv};
