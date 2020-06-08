@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/JasjotReactWeb/static/js/main.7b30c786.chunk.js",
-    "main.js.map": "/JasjotReactWeb/static/js/main.7b30c786.chunk.js.map",
+    "main.js": "/JasjotReactWeb/static/js/main.5f891c89.chunk.js",
+    "main.js.map": "/JasjotReactWeb/static/js/main.5f891c89.chunk.js.map",
     "runtime-main.js": "/JasjotReactWeb/static/js/runtime-main.ffeb8314.js",
     "runtime-main.js.map": "/JasjotReactWeb/static/js/runtime-main.ffeb8314.js.map",
     "static/js/2.58ec1a59.chunk.js": "/JasjotReactWeb/static/js/2.58ec1a59.chunk.js",
     "static/js/2.58ec1a59.chunk.js.map": "/JasjotReactWeb/static/js/2.58ec1a59.chunk.js.map",
     "index.html": "/JasjotReactWeb/index.html",
-    "precache-manifest.663be7dfce621b1391bb257af5fc2dfe.js": "/JasjotReactWeb/precache-manifest.663be7dfce621b1391bb257af5fc2dfe.js",
+    "precache-manifest.35db12b27deb11d79ba97003c431d2f9.js": "/JasjotReactWeb/precache-manifest.35db12b27deb11d79ba97003c431d2f9.js",
     "service-worker.js": "/JasjotReactWeb/service-worker.js",
     "static/js/2.58ec1a59.chunk.js.LICENSE.txt": "/JasjotReactWeb/static/js/2.58ec1a59.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ffeb8314.js",
     "static/js/2.58ec1a59.chunk.js",
-    "static/js/main.7b30c786.chunk.js"
+    "static/js/main.5f891c89.chunk.js"
   ]
 }
