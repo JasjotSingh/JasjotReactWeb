@@ -13,7 +13,7 @@ const profile =
             Love : "Coding, Gamming, Pizza"
         },
         education :{
-            Quote:"Education is not the learning of facts, but traning of the mind to think",
+            Quote:"Education is not the learning of facts, but training of the mind to think",
             Quoteby:"-Albert Einstein",
             Time :"Aug 2013 - July 2015",
             Degree : "Masters of Science Computer Science",
