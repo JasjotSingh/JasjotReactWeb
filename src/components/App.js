@@ -1,6 +1,6 @@
 import React from "react";
 
-import Intro from "./Intro/Intro";
+import Intro from "./Intro/Intro" ;
 import Nav from "./Nav/Nav";
 
 //data import:
