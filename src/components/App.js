@@ -4,7 +4,7 @@ import Intro from "./Intro/Intro";
 import Nav from "./Nav/Nav";
 
 //data import:
-import profile from "../data/aboutMe";
+import profile from "../Data/aboutMe";
 
 //two ways of making a structure: 
 //1. about and Education divs.
