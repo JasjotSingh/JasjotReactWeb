@@ -22,7 +22,13 @@ function ProjDiv(props){
     return(
         
         <div className = {classes} style={hoverStyle} onMouseEnter ={mouseEnter} onMouseLeave={mouseLeave}>
-            <span><h4><span>{props.name}</span></h4> {props.language} </span>
+            <span>
+                <h4>
+                    <span>{props.name}</span> 
+                    {(props.link !== "") && <a href={props.link}><i class="fas fa-link"></i></a>}
+                </h4> 
+                {props.language} 
+            </span>
             <p>{props.desp}</p>
         </div>
            
